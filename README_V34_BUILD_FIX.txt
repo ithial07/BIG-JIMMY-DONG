@@ -1,0 +1,1 @@
+v34 fixes the v33 compile error: m_iconPixmapCache was used but not declared in MapWidget. It keeps the floor-priority lag fix: [ Floor ] uses the selected cobblestone tile first, and room names containing Cave/Tunnel/Mine/Underground no longer override floor rooms.

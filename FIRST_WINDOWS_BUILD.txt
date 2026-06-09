@@ -1,0 +1,33 @@
+WINDOWS BUILD FIX
+=================
+
+You said typing "build windows" did nothing.
+
+I added a real build.bat wrapper, so this command now works:
+
+    build windows
+
+Use it from inside this folder.
+
+Recommended steps:
+
+1. Install Qt 6.
+2. Install CMake.
+3. Install Visual Studio Build Tools or MinGW.
+4. Open "Qt 6 Command Prompt" from the Start Menu.
+5. cd into this ardabest_client folder.
+6. Type:
+
+    build windows
+
+You can also double-click:
+
+    run-windows.bat
+
+The script now pauses so the window will not instantly disappear.
+
+
+IF YOU SEE "libstdc++-6.dll was not found":
+  1. Run FIX-MISSING-DLLS-WINDOWS.bat
+  2. Then run package-windows\RUN-ARDABEST-CLIENT.bat
+  3. Do not move ardabest_client.exe by itself. Keep the whole package-windows folder together.
